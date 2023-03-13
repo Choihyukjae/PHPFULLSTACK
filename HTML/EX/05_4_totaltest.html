@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제2</title>
+    <style>
+        #container{
+            width: 520px;
+            border:1px solid black;
+            padding:20px 40px;
+            margin:0 auto;
+        }
+        fieldset { margin-bottom:15px}
+        legend {font-weight:bold; }
+        ul {list-style-type: none; } 
+        li {line-height:30px;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>프런트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr>
+        <form>
+            <dl>
+            <dt>
+                <b><span>개인 정보</span></b><br><br>
+            </dt>
+            <dd>
+                <label for="name">이름</label>
+                <input placeholder="공백없이 입력하세요" type="text" name="name" id="name">
+                <br>
+                <label for="tel">연락처</label>
+                <input type="tel" name="tel" id="tel">
+            </dd>
+                <br><br>
+            <dt>
+                <b><span>지원 분야</span></b>
+            </dt>
+            <dd>
+                <br>
+                <input type="radio" name="hh" id="jiwon">
+                <label for="jiwon">웹 퍼블리싱</label><br>
+                <input type="radio" name="hh" id="jiwon_1">
+                <label for="jiwon_1">웹 애플리케이션 개발</label><br>
+                <input type="radio" name="hh" id="jiwon_2">
+                <label for="jiwon_2">개발 환경 개선</label><br>
+                <br>
+            </dd>
+            </dl>
+                <b><span>지원동기</span></b>
+                <br>
+                <label for="memo"></label>
+                <textarea placeholder="본사 지원 동기를 간략히 써 주세요." name="" id="" cols="60" rows="5"></textarea>
+                <br>
+                <input type="submit" name="제출" value="접수하기">
+                <input type="reset" name="다시" value="다시쓰기">
+        </form>
+    </div>
+</body>
+</html>
