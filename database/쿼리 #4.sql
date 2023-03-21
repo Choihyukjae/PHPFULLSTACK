@@ -62,3 +62,58 @@ SELECT emp_no AS '사원번호',  case title
 	END AS 'k_title'
 	FROM titles ;
 
+
+
+SELECT CONCAT('안녕하세요','은아침입니다.');
+
+
+SELECT CONCAT(first_name,' ',last_name)
+FROM employees
+WHERE emp_no = 500000;
+
+SELECT CONCAT_WS('/','a','b','c');
+
+
+select FORMAT (123456,2);
+
+
+SELECT LEFT ('abcdefg',3);
+
+
+SELECT LOWER ('ABC');
+
+
+SELECT rPAD('abc',7,'@');
+
+
+SELECT TRIM('   abc');
+
+
+
+SELECT TRIM(LEADING 'abc' FROM 'abcdef');
+
+
+SELECT SUBSTRING('abcdef',2,4);
+
+SELECT SUBSTRING_INDEX('ab.cd.ef.gh','.',3);
+
+
+SELECT TRUNCATE(2.1111111,4);
+
+
+SELECT NOW();
+
+SELECT DATE(NOW());
+
+SELECT ADDDATE(NOW(),INTERVAL -1 MONTH);
+
+SELECT SUBDATE(NOW(),INTERVAL 1 DAY);
+
+SELECT ADDTIME(NOW(), '-10:13:16');
+
+
+SELECT emp_no, RANK() over(ORDER BY salary ASC) r, salary
+FROM salaries ;
+
+SELECT emp_no, ROW_NUMBER() over(ORDER BY salary ASC) r, salary
+FROM salaries ;
