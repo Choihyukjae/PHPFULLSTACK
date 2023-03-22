@@ -81,7 +81,7 @@ AND to_date >= NOW();
 
 
 
- 
+
 SELECT emp_no , last_name
 FROM employees
 WHERE emp_no  IN(SELECT emp_no
@@ -90,9 +90,5 @@ WHERE emp_no  IN(SELECT emp_no
 					AND title ='Senior Engineer'
 					);
 
- 
- 
- 
- 
- 
+
 
