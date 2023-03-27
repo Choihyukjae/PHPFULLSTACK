@@ -34,4 +34,7 @@ else {
 }
 echo $you.$num.$score.$grade;
 }
+//effefef
+echo 11;
+
 ?>
