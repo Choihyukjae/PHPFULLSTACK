@@ -5,7 +5,7 @@ $you="당신의 점수는";
 $score="점 입니다.";
 
 switch($num > 100 || $num<0){
-case :
+case 100:
 
 echo "잘못된 값을 입력하셨습니다";
 break;
