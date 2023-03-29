@@ -50,7 +50,7 @@ function fnc_a($g)
         fnc_st($i);
     }
 }
-echo fnc_a(6);
+    fnc_a(6);
 
 echo "\n";
 
@@ -63,7 +63,7 @@ function fnc_k($g)
 
     }
 }
-echo fnc_k(6);
+    fnc_k(3);
 
 
 ?>

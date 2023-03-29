@@ -31,11 +31,22 @@
 
     // while(조건);
     
-    //for문 
     for ($f=2; $f <=9  ; $f++) { 
         echo $f."단\n";
         for ($i=1; $i <10 ; $i++) { 
             echo $f."*".$i."=". $f*$i."\n";
         }
+    }
+
+
+
+    $arr = array(5,10,7,3,1);
+    $n = count($arr);
+    
+    for ($i=1; $i < $n ; $i++) 
+    {
+        $temp = $arr[$i-1];
+        $arr[$i-1] = $arr[$i];
+        $arr[$i] = $temp;
     }
 ?>
