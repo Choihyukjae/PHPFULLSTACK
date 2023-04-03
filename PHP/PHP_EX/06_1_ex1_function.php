@@ -1,18 +1,18 @@
 <?php
-    // $a = 22;
-    // $b = 3;
-    // $sum = $a + $b;
-    // echo $sum ;
-//function
-// function fnc_add($int_a, $int_b)
-// {
-//     $sum = $int_a + $int_b;
+    $a = 22;
+    $b = 3;
+    $sum = $a + $b;
+    echo $sum ;
+    
+function fnc_add($int_a, $int_b)
+{
+    $sum = $int_a + $int_b;
 
-//     return $sum;
-// }
+    return $sum;
+}
 
-// $result_add = fnc_add(10 , 9);
-// echo $result_add ;
+$result_add = fnc_add(10 , 9);
+echo $result_add ;
 //가변 파라미터 함수
 function fnc_args_add()
 {

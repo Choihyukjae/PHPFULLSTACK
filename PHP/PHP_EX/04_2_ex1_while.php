@@ -40,13 +40,13 @@
 
 
 
-    $arr = array(5,10,7,3,1);
-    $n = count($arr);
+    // $arr = array(5,10,7,3,1);
+    // $n = count($arr);
     
-    for ($i=1; $i < $n ; $i++) 
-    {
-        $temp = $arr[$i-1];
-        $arr[$i-1] = $arr[$i];
-        $arr[$i] = $temp;
-    }
+    // for ($i=1; $i < $n ; $i++) 
+    // {
+    //     $temp = $arr[$i-1];
+    //     $arr[$i-1] = $arr[$i];
+    //     $arr[$i] = $temp;
+    // }
 ?>
