@@ -22,17 +22,17 @@
 
 //별찍기를 함수로 만들어주세요
 
-// function fnc_star($a){
-// for($i=1; $i<= $a; $i++)
-// {
-//     for($f=0; $f<$i; $f++) 
-//     { 
-//         echo "*";
-//     }
-//     echo "\n";
-// }
-// }
-// echo fnc_star(6);
+function fnc_star($a){
+for($i=1; $i<= $a; $i++)
+{
+    for($f=0; $f<$i; $f++) 
+    { 
+        echo "*";
+    }
+    echo "\n";
+}
+}
+echo fnc_star(6);
 
 function fnc_st($a)
 {

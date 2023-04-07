@@ -10,7 +10,7 @@ my_db_conn( $obj_conn );
 
 //SQL
 $sql = 
-    " SELECT "
+    " SELECT " 
     ." * "
     ." FROM "
     ." employees "
@@ -24,9 +24,8 @@ $arr_prepare =
 $stmt = $obj_conn->prepare( $sql );
 $stmt-> execute( $arr_prepare );
 $result = $stmt->fetchAll();
-
 var_dump( $result) ;
-
+count( $result );
 
 
 $obj_conn = null; //DB Connection 파기

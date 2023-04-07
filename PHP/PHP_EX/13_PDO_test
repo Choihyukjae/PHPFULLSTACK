@@ -12,19 +12,22 @@
 
 include_once("./12_2_ex2_fnc_db_conn.php");
 /////////////////////////////////////////
-//1.전체 월급의 평균
-// $obj1_conn = null;//PDO Class 
-// my_db_conn( $obj1_conn );
-// $sql1 =
-//     "SELECT AVG(salary)
-//     FROM salaries
-//     ";
+///1.전체 월급의 평균
+$obj1_conn = null;//PDO Class 
+my_db_conn( $obj1_conn );
+$sql1 =
+    "SELECT AVG(salary)
+    FROM salaries
+    WHERE 
+    to_date >= now()";
 // $stmt = $obj1_conn->prepare( $sql1 );
 // $stmt -> execute();
 // $result = $stmt->fetchAll();
 // var_dump( $result );
-// $obj1_conn = null;
-
+$stmt =  $obj1_conn->query( $sql1 );
+$result = $stmt->fetchAll();
+var_dump($result);
+$obj1_conn = null;
 /////////////////////////////////////////
 // 2. 새로운 사원 정보를 employees 테이블에 등록해주세요
 // $obj_conn = null;
@@ -85,29 +88,27 @@ include_once("./12_2_ex2_fnc_db_conn.php");
 // $stmt3 -> execute( $arr3_prepare);
 // $result3 = $stmt3->fetchAll();
 // $obj3_conn->commit();
-// var_dump( $result3 );
 // $obj3_conn = null;
 
 //////////////////////////////////////////
 // 2,에서 등록한 사원을 삭제해 주세요 
-$obj4_conn = null;
-my_db_conn( $obj4_conn );
-$sql4 =
-    " DELETE"
-    ." FROM" 
-    ." employees"
-    ." WHERE"
-    ." emp_no = :emp_no " ;
+// $obj4_conn = null;
+// my_db_conn( $obj4_conn );
+// $sql4 =
+//     " DELETE"
+//     ." FROM" 
+//     ." employees"
+//     ." WHERE"
+//     ." emp_no = :emp_no " ;
 
-    $arr_4prepare =
-    array(
-        ":emp_no" => 500003
-    );
-        $stmt4 = $obj4_conn->prepare( $sql4 );
-        $stmt4 -> execute( $arr_4prepare);
-        $result4 = $stmt4->fetchAll();
-        $obj4_conn->commit();
-        var_dump( $result4 );
-        $obj4_conn = null;
+//     $arr_4prepare =
+//     array(
+//         ":emp_no" => 500003
+//     );
+//         $stmt4 = $obj4_conn->prepare( $sql4 );
+//         $stmt4 -> execute( $arr_4prepare);
+//         $result4 = $stmt4->fetchAll();
+//         $obj4_conn->commit();
+//         $obj4_conn = null;
 ///////////////////////////////////////////
 ?>

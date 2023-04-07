@@ -1,5 +1,5 @@
 <?php 
-$date = empty($_GET['date']) ? date('Y-m-d') : $_GET['date'];
+$date = empty($_GET['date']) ? date('Y-m') : $_GET['date'];
 $firstDate = date('Y-m-01',strtotime($date));
 $firstDateWcode = date('w',strtotime($firstDate));
 $lastDateDay = date('t', strtotime($date));

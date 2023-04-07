@@ -2,25 +2,25 @@
 
 // DB 연결
 $dbc = mysqli_connect("localhost","root","root506","employees",3306);
-//쿼리요청
-// $result_query = mysqli_query($dbc,"SELECT emp_no,first_name FROM employees LIMIT 5 ;");
+// 쿼리요청
+$result_query = mysqli_query($dbc,"SELECT emp_no,first_name FROM employees LIMIT 5 ;");
 
 // 한줄뽑기
 // while ($result_row = mysqli_fetch_row($result_query))
-//전체 가져오기
-// while ($result_row = mysqli_fetch_row($result_query))
-// {
-//     var_dump($result_row);
-// }
-//prepared Statement :
-$i1 = "F";
-$i2 = 10010;
-$i3 = 5;
-$result = null ;
-$stmt = $dbc->stmt_init(); // statement 를 셋팅
-$stmt-> prepare ("SELECT emp_no,first_name FROM employees WHERE gender = ? AND emp_no <=? LIMIT ?;");//db 질의 할 쿼리를 작성
-$stmt->bind_param("sii",$i1,$i2,$i3); // prepare 셋팅
-$stmt->execute(); // DB에 쿼리 질의 실행
+// 전체 가져오기
+while ($result_row = mysqli_fetch_row($result_query))
+{
+    var_dump($result_row);
+}
+// prepared Statement :
+// $i1 = "F";
+// $i2 = 10010;
+// $i3 = 5;
+// $result = null ;
+// $stmt = $dbc->stmt_init(); // statement 를 셋팅
+// $stmt-> prepare ("SELECT emp_no,first_name FROM employees WHERE gender = ? AND emp_no <=? LIMIT ?;");//db 질의 할 쿼리를 작성
+// $stmt->bind_param("sii",$i1,$i2,$i3); // prepare 셋팅
+// $stmt->execute(); // DB에 쿼리 질의 실행
 
 
 //--------------이하 질의 결과를 우리가 지정한 변수에담아 사용하는 방법-----------------------

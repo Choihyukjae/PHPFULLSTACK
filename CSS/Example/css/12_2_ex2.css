@@ -1,4 +1,4 @@
-/* .flex_container{
+.flex_container{
     background-color: white;
     margin: 10px;
     width: 58vw;
@@ -36,7 +36,7 @@
     background-color: rgb(194, 190, 190);
     border-radius: 0px 10px 10px 0px;
     margin: 10px 0px;
-} */
+}
 *{
     margin: 0;
     padding: 0;

@@ -207,14 +207,12 @@ switch ($str_loc) {
 //     }
 
 // 1~50 까지 반복문을 이용해서 더하는 프로그램을 만들어주세요
-function sum($n)
-{
+
     $result = 0;
-for ($i=1; $i <= $n; $i++) 
+for ($i=1; $i <= 10; $i++) 
 { 
     $result += $i;
 }
     echo $result;
-}
-echo sum(100);
+
 ?>
