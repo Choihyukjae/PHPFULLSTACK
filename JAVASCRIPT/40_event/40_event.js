@@ -8,3 +8,9 @@ const btn1 = document.querySelector('#btn1');
 btn1.onclick = function(){
     location.href = "https://www.google.com"
 }
+
+// addEventListener ( eventType, function) 방식
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click',() => {
+    location.href = 'https://www.daum.net';
+})
