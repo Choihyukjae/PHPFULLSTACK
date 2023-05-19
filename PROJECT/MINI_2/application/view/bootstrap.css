@@ -1,0 +1,66 @@
+p{
+    text-align: center;
+}
+h6{
+    text-align: center;
+}
+.my-container{
+    margin: 10px;
+}
+.p1{
+    width :1230px;
+    text-align: center;
+    margin: 0 auto;
+    /* justify-content: center; */
+
+}
+/* .my-slide>img{
+    width: 100%;
+    height: 400px;
+} */
+.bottom_box{
+    background-color: black;
+    height: 400px;
+}
+.button_wrap>div>a{
+    color: white;
+}
+.hhhh2>ul>li>a{
+    color: black;
+}
+.hhh2{
+    margin-right: 100px;
+}
+.my_btn{
+    height: 40px;
+    display: block;
+}
+.icon_1{
+    width: 30px;
+    display: block;
+    margin-right: 30px;
+}
+.bi-bag::before{
+    font-size: 35px;
+    color: black;
+    
+}
+.my_nav{
+    position: fixed;
+    width : 100%;
+    top:0px;
+    z-index: 99;
+}
+a{
+    text-decoration: none ;
+    color: black ;
+}
+/* .bottom_bx{
+    background-color: black;
+} */
+.my_nav{
+    color: white ;
+}
+.search_bx{
+    margin-right :50px;
+}

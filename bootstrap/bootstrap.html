@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <nav class="navbar  navbar-expand-lg navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu  " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+<!-- 슬라이드 -->
+<!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://source.unsplash.com/user/erondu/1600x400" class="d-block w-100" alt="..." style  >
+        <div class="carousel-caption d-none d-md-block">
+        <h5>여행을 떠나자</h5>
+        <p>최</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="https://source.unsplash.com/user/erondu/1600x400" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>여행을 떠나자</h5>
+        <p>혁</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="https://source.unsplash.com/user/erondu/1600x400" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>여행을 떠나자</h5>
+        <p>재</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div> -->
+
+
+<!--카드(그리드)-->
+
+<div class="d-flex justify-content-around my-container">
+    <div class = "hhhh1" >
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">#항공권</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">#호텔</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">#대사관</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="row row-cols-xxl-4 row-cols-lg-3 " style="max-width: 60%;">
+        <div class="col d-flex justify-content-center pt-3 pb-3">
+            <div class="card" style="width: 18rem; ">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">타고다니는 캐리어</h5>
+                    <p class="card-text">사면 재밌을거같아요</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        구매하기
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center pt-3 pb-3 ">
+            <div class="card" style="width: 18rem;  ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuH2nZEBcNodru9-lY5OHHQRy0bFS47adn3g&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">목베개</h5>
+                    <p class="card-text">비행기에서 꿀잠가능</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        구매하기
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center pt-3 pb-3 ">
+            <div class="card" style="width: 18rem;  ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemPck622PyJbtNYg0NNyacJEmgQFYh4m0vg&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">수면안대</h5>
+                    <p class="card-text">잠을 잘자야한다</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        구매하기
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center pt-3 pb-3 ">
+            <div class="card" style="width: 18rem; ">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">에어팟</h5>
+                    <p class="card-text">노래들으면서 여행</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        구매하기
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center pt-3 pb-3 ">
+            <div class="card" style="width: 18rem; ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-bt9onGke7gwt4agdYKVbDQWlOIXxs26lw&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">에어팟 맥스</h5>
+                    <p class="card-text">에어팟보다 간지남</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        구매하기
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center pt-3 pb-3 ">
+            <div class="card" style="width: 18rem; ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-bt9onGke7gwt4agdYKVbDQWlOIXxs26lw&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">에어팟 맥스</h5>
+                    <p class="card-text">에어팟보다 간지남</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        구매하기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class = "hhhh2" >
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">최혁재님</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">장바구니</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">구매내역</a>
+                </li>
+              </ul>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- 모달 -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        구매하기
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">장바구니에 담기</button>
+            <button type="button" class="btn btn-primary">즉시구매</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- <button type="button" class="btn btn-danger">Primary</button>
+    <button type="button" class="btn btn-dark">Primary</button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

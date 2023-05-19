@@ -1,0 +1,669 @@
+<body class="doz_sys  _body_menu_m20230511b97167a6ef95a  mobile-nav-on  mobile_nav_dep1  shopping  new_header_site   new_fixed_header_disable fixed-menu-on section_fixed_disable" style=";" id="doz_body">
+
+
+
+    <div id="site_alarm_slidemenu_container" class="notification-canvas-container">
+        <div class="notification-canvas-backdrop" id="site_alarm_slidemenu_backdrop" style="display: none"></div>
+        <div id="site_alarm_slidemenu" class="notification-canvas alarm-pane alarm_slide">
+    
+            <div class="tse-scrollable _scroll_wrap">
+                <div class="tse-content tab-content _is_tse_content" style="padding-top: 60px;">
+                    <div class="site-alarm-head _alarm_header">
+                        <header id="site_alarm_title">알림</header>
+                                            <a href="javascript:;" class="btn btn-flat goback " onclick="ALARM_MENU.showAlarmSlide();"><i class="btm bt-arrow-left" aria-hidden="true"></i><span class="sr-only">뒤로</span></a>
+                    </div>
+                    <div class="site-alarm-head _setting_header" style="display: none">
+                        <header id="site_alarm_title_setting">알림 설정</header>
+                        <a href="javascript:;" class="btn btn-flat goback " onclick="ALARM_MENU.toggleAlarmSetting();"><i class="btm bt-arrow-left" aria-hidden="true"></i><span class="sr-only">뒤로</span></a>
+                    </div>
+                    <div id="site_alarm_list_wrap" class="site_alarm_list_wrap">
+                        <!--알림 리스트-->
+    
+                        <div id="site_alarm_tab" class="notify-body"></div>
+    
+                        <div id="site_alarm_more_btn" class="notify-body" style="display: none;">
+                            <a class="tile more" href="javascript:;" onclick="ALARM_MENU.getHeaderAlarmList()">
+                                <div class="tile-content">
+                                    더보기							</div>
+                            </a>
+                        </div>
+    
+                    </div>
+                    <div id="site_alarm_setting_wrap" style="display: none;" class="site_alarm_setting_wrap">
+    
+                        <div class="offcanvas-block alarm-setting">
+                            <div class="_scroll_wrap" id="site_alarm_menu_tap_wrap">
+                                <div class="tab-content">
+                                    <div class="tab-pane active">
+                                        <div class="notify-body">
+                                            <a href="javascript:;" class="board-alaram tile">게시물 알림</a>
+                                            <a class="tile" href="javascript:;" onclick="ALARM_MENU.changeAlarmSetting($(this),'','my_post')">
+                                                <div class="tile-content">
+                                                    <div class="tile-text">
+                                                        내 글 반응													<div class="text-sm text-gray-bright">내가 작성한 게시물이나 댓글에 다른 사람이 댓글이나 답글을 작성하면 알려줍니다.</div>
+                                                        <div class="check ">
+                                                            <div class="checkbox checkbox-styled">
+                                                                <label>
+                                                                    <input title="내 글 반응" type="checkbox" value="ok"><span></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="tile" href="javascript:;" onclick="ALARM_MENU.changeAlarmSetting($(this),'','notice')">
+                                                <div class="tile-content">
+                                                    <div class="tile-text">
+                                                        공지사항													<div class="text-sm text-gray-bright">사이트에서 보내는 중요한 공지를 실시간으로 알려줍니다.</div>
+                                                        <div class="check">
+                                                            <div class="checkbox checkbox-styled">
+                                                                <label>
+                                                                    <input title="공지사항" type="checkbox" value="ok"><span></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="site-alarm-body">
+    
+                <!--//알림 리스트-->
+                <!--알림 설정-->
+    
+            </div>
+        </div>
+    </div>
+    <!-- end#offcanvas-help --><ul class="dropdown-menu animation-dock member_profile" id="member_profile">
+        <li class="dropdown-profile text-center">
+            <a href="javascript:;" class="nav-btn-icon profile alarm-toggle _show_alarm" onclick="ALARM_MENU.showAlarmSlide();" id="slide-alarm" style="right: 0; position:absolute; right: 0; top:0; font-size:20px; padding:20px; "><i class="icon-bell"></i><span class="sr-only">Alarm</span></a>
+            <span class="profile-info">
+                <div onclick="SITE_MEMBER.editProfile()">
+                    <img src="/common/img/default_profile.png" class="img-circle dropdown-avatar-big _profile_img" alt="프로필 이미지">
+                </div>
+                <div class="sm-padding no-padding-bottom">
+                                            </div>
+                        </span>
+        </li>
+        <li class="profile-footer btn-group-justified">
+            <a href="javascript:;" onclick="SITE_MEMBER.openLogin('L3Nob3BfbXlwYWdl','mypage');" class="btn btn-flat">마이페이지</a>
+                    <a href="/logout.cm?back_url=Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D" class="btn btn-flat right">로그아웃</a>
+        </li>
+    </ul><header id="doz_header_wrap"><div id="doz_header" data-newheader="Y"><div class="new_org_header _new_org_header"><div id="inline_header_normal" style="min-height: 30px;" class="tansparent_bg first_scroll_fixed">	<div data-type="section-wrap" class="inline-section-wrap fixed_transform _fixed_header_section scroll-to-fixed-fixed2" id="s20230511a0fa04f3d1a90" style="z-index: 999; position: fixed; top: 0px; margin-left: 0px; width: 1903px; left: 0px;"><div class="section_bg _section_bg fixed_transform _interactive_bg  "></div><div class="section_bg_color _section_bg_color fixed_transform" style="background-color:#282828;  position: absolute;left: 0;top: 0;right: 0; bottom: 0;"></div><div data-type="inside" class="inline-inside _inline-inside"><div data-type="section" class="inline-section" section-code="s20230511a0fa04f3d1a90"><div data-type="col-group" data-col-group="left" class="inline-col-group inline-col-group-left" style="width:350px;"><div data-type="grid" class="inline-col"><div data-type="widget" id="w2023051128a0c9c759df7" class="inline-widget"><div class="_widget_data" data-widget-type="inline_text">
+        
+    
+        <div doz_type="text" class="widget inline_widget _text_wrap widget_text_wrap fr-view   default_padding " id="text_w2023051128a0c9c759df7">
+            <div class="text-table _text_table">
+                <div class="text-table-cell fixed_transform _text_preview"><p style="color:#fff;"><strong>&gt;&gt; NEW ARRIVALS 20% SALE&nbsp;</strong><em><strong>!&nbsp;</strong></em></p></div>					</div>
+        </div>
+    </div></div></div></div><div data-type="col-group" data-col-group="center" class="inline-col-group inline-col-group-center"><div data-type="grid" class="inline-col"><div data-type="widget" id="w2023051128911c75e25f4" class="inline-widget"><div class="_widget_data" data-widget-type="inline_padding"><div class="widget inline_widget padding" data-height="-13" data-width="30">
+        <div id="padding_w2023051128911c75e25f4" style="min-width:5px; min-height:5px; height:-13px;"></div>
+    </div>
+    </div></div></div></div><div data-type="col-group" data-col-group="right" class="inline-col-group inline-col-group-right" style="width:350px;"><div data-type="grid" class="inline-col"><div data-type="widget" id="w20230511aa549ef5fd25a" class="inline-widget"><div class="_widget_data" data-widget-type="inline_login_btn">	<div class="widget inline_widget login_btn button  button_text txt_l text-xx-small">
+                    <div><div class="inline-blocked login_btn_item "><a class="_fade_link   btn_text btn_5cdcc5cc59900   btn_custom " href="javascript:;" onclick="SITE_MEMBER.openLogin('Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D', 'null', null, 'Y');" style="border-radius:0px; "><span class="text fixed_transform ">Login</span></a></div><div class="inline-blocked login_btn_item "><div class="line" style="; "></div></div><div class="inline-blocked login_btn_item "><a class="_fade_link   btn_text btn_5cdcc5cc59940   btn_custom " href="javascript:;" onclick="SITE_MEMBER.openJoinPatternChoice('Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D', '');" style="border-radius:0px; "><span class="text fixed_transform ">Join</span></a></div><div class="inline-blocked login_btn_item "><div class="line" style="; "></div></div><div class="inline-blocked login_btn_item "><a class="_fade_link   btn_text btn_5cdcc5cc599b9   btn_custom " href="/shop_cart" style="border-radius:0px; "><span class="text fixed_transform ">Cart</span><span class="badge_wrap"><sup class="badge _shop_cart_badge_cnt_wrap" style="position: static; margin-top: 0;" disabled="">0</sup></span></a></div></div>					</div>
+    
+        
+    
+    
+        
+    </div></div></div><div data-type="grid" class="inline-col"><div data-type="widget" id="w20230511dbb02e2d96063" class="inline-widget"><div class="_widget_data" data-widget-type="inline_padding"><div class="widget inline_widget padding" data-height="30" data-width="2">
+        <div id="padding_w20230511dbb02e2d96063" style="min-width:5px; min-height:5px; height:30px;"></div>
+    </div>
+    </div></div></div></div></div></div>
+                </div><div class="spacer" style="display: block; width: 1903px; height: 42px; float: none;"></div>	</div><div id="inline_header_mobile" style="min-height: 30px;" class="first_scroll_fixed">	<div data-type="section-wrap" class="inline-section-wrap fixed_transform _fixed_header_section" id="s2023051136c0f9be6687b"><div class="section_bg _section_bg fixed_transform _interactive_bg  "></div><div class="section_bg_color _section_bg_color fixed_transform" style="background-color:#ffffff;  position: absolute;left: 0;top: 0;right: 0; bottom: 0;"></div><div data-type="inside" class="inline-inside _inline-inside"><div data-type="section" class="inline-section" section-code="s2023051136c0f9be6687b"><div data-type="col-group" data-col-group="left" class="inline-col-group inline-col-group-left" style="width:77px;"><div data-type="grid" class="inline-col"><div data-type="widget" id="w202305113855f5b595fb1" class="inline-widget"><div class="_widget_data" data-widget-type="inline_login_btn">	<div class="widget inline_widget login_btn button  button_text txt_l text-xx-small">
+                    <div><div class="inline-blocked login_btn_item "><a class="_fade_link   btn_text btn_6Ws15d0cI2   btn_custom " href="javascript:;" onclick="SITE_MEMBER.openLogin('Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D', 'null', null, 'N');" style="border-radius:0px; "><span class="text fixed_transform ">my</span></a></div></div>					</div>
+    
+        
+    
+    
+        
+    </div></div></div></div><div data-type="col-group" data-col-group="center" class="inline-col-group inline-col-group-center"><div data-type="grid" class="inline-col"><div data-type="widget" id="w20230511a0f60b709c5da" class="inline-widget"><div class="_widget_data" data-widget-type="inline_logo">
+    <div class="widget inline_widget logo  text_inline" id="logo_w20230511a0f60b709c5da">
+                <div class="logo_title ">
+                <a class=" fixed_transform" style="display: block" href="/">최혁재</a>
+            </div>
+            </div>
+    
+    </div></div></div></div><div data-type="col-group" data-col-group="right" class="inline-col-group inline-col-group-right" style="width:77px;"><div data-type="grid" class="inline-col"><div data-type="widget" id="w20230511c5e69e973977c" class="inline-widget"><div class="_widget_data" data-widget-type="inline_login_btn">	<div class="widget inline_widget login_btn button  button_text txt_l text-xx-small">
+                    <div><div class="inline-blocked login_btn_item "><a class="_fade_link   btn_text btn_59e036883ad24   btn_custom " href="/shop_cart" style="border-radius:0px; "><span class="sr-only">로그인 위젯 문구</span><span class="icon_class "><i class="fixed_transform simple icon-basket" aria-hidden="true"></i></span><span class="text fixed_transform no_text"></span><span class="badge_wrap"><sup class="badge _shop_cart_badge_cnt_wrap" style="top:auto; bottom:-5px; right: -5px" disabled="">0</sup></span></a></div></div>					</div>
+    
+        
+    
+    
+        
+    </div></div></div><div data-type="grid" class="inline-col"><div data-type="widget" id="w20230511c3a3bf8028f85" class="inline-widget"><div class="_widget_data" data-widget-type="inline_search_btn">
+    
+    <div class="widget inline_widget search_btn">
+        <div class="search_type fixed_transform search_btn_type01">
+            <div class="inline-blocked holder">
+                <form class=" icon_on" action="/search" method="get" id="inline_s_form_w20230511c3a3bf8028f85">
+                    <input class="search_btn_form" name="keyword" style="display: none" placeholder="Search" value="" title="검색"><a class="fixed_transform inline-blocked " href="#" onclick="SITE_SEARCH.openSearch(search_option_data_w20230511c3a3bf8028f85);"><i class="btm bt-search"></i><span class="sr-only">site search</span></a>			</form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    </div></div></div></div></div></div>
+                </div><div></div>	<div data-type="carousel_menu" class="inline-section-wrap _fixed_header_section" id="mobile_carousel_menu"><div class="inline-inside _inline-inside"><div class="mobile_table_nav fixed_transform _mobile_nav ">
+        <table class="mobile_table_nav_wrap _mobile_table_nav_wrap st00" data-table_line_count="4"><tbody><tr><td class="nav-item _item  active" data-code="m20230511b97167a6ef95a" data-rel="table_nav" data-url="PRODUCT"> 									<a href="/PRODUCT" class="_fade_link" style=""> 										<span class="plain_name" data-hover="">ALL PRODUCT</span> 									</a> 								</td><td class="nav-item _item" data-code="m202305119eae6ad8a3c52" data-rel="table_nav" data-url="NOTICE"> 									<a href="/NOTICE" class="_fade_link" style=""> 										<span class="plain_name" data-hover="">NOTICE</span> 									</a> 								</td><td class="nav-item _item" data-code="m202305110d022c434e794" data-rel="table_nav" data-url="FAQ"> 									<a href="/FAQ" class="_fade_link" style=""> 										<span class="plain_name" data-hover="">FAQ</span> 									</a> 								</td><td class="nav-item _item" data-code="m20230511e5973977d6792" data-rel="table_nav" data-url="CONTACT"> 									<a href="/CONTACT" class="_fade_link" style=""> 										<span class="plain_name" data-hover="">CONTACT</span> 									</a> 								</td></tr></tbody></table></div>
+    
+    </div>
+    </div><div></div></div></div></div></header><div doz_type="section" class="section_wrap  pc_section    section_first _section_first   mobile_section_first    side_left     " id="s20230511dd7f383b99c8c" style="; ;" doz_change_mobile="N" doz_aside="Y" doz_side_width="240" doz_side_margin="30" doz_extend="N" doz_mobile_section="N" doz_mobile_hide="N" doz_header_repeat="N" doz_footer_repeat="N" doz_category="default"><div class="section_bg _section_bg _interactive_bg   " style="   background-size:cover; background-repeat: no-repeat; position: absolute;left: 0;top: 0;right: 0; bottom: 0;"></div><div class="section_bg_color _section_bg_color" style="  position: absolute;left: 0;top: 0;right: 0; bottom: 0;"></div>
+            
+        
+                
+            
+                        
+                        <main class=""><div doz_type="aside" class="doz_aside _doz_aside" style="z-index: auto; position: relative; top: 0px; left: auto;"><div doz_type="inside" class="inside"><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511e74fad8f37fa4"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="17" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w20230511e74fad8f37fa4" style="width:100%; min-height:1px; height:17px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w2023051101f22fd260a46"><div class="_widget_data " data-widget-name="가로선" data-widget-type="hr" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N"><div class="widget line type01 _hide" id="hr_w2023051101f22fd260a46">
+        <div class="line_box holder" style="width:100%; ">
+            <hr style="border-top-width:3px; border-color:#212121;">	</div>
+    </div>
+    
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511a12557fab61b0"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="10" style="margin-top:0px; margin-bottom:0px;">
+        <div id="padding_w20230511a12557fab61b0" style="width:100%; min-height:1px; height:10px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w202305116b88cf1a99cab"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+        <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202305116b88cf1a99cab">
+            
+                    <div class="text-table "><div><h4 style="margin: 0px; text-align: left;"><strong>Our - mind<br>Store</strong></h4></div></div>		
+        </div>
+        
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w2023051194b837e6d75fb"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="10" style="margin-top:0px; margin-bottom:0px;">
+        <div id="padding_w2023051194b837e6d75fb" style="width:100%; min-height:1px; height:10px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w202305110c64d454a9b95"><div class="_widget_data " data-widget-name="가로선" data-widget-type="hr" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N"><div class="widget line type01 _hide" id="hr_w202305110c64d454a9b95">
+        <div class="line_box holder" style="width:100%; ">
+            <hr style="border-top-width:1px; border-color:rgba(0, 0, 0, 0.1);">	</div>
+    </div>
+    
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511018d9634bb97f"><div class="_widget_data " data-widget-name="메뉴/카테고리" data-widget-type="sub_menu" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N"><div class="widget">
+        <div class="nav sub-menu sub_menu_hide  v-menu-type2 menu-vertical row-cnt-3 row-cnt-mobile-3">
+            <ul class="">
+        
+        <li style="" class="depth-01  active   active-real   " data-code="m20230511b97167a6ef95a">
+            <a href="/PRODUCT" data-url="PRODUCT" data-has_child="N" data-is_folder_menu="N" class=" _fade_link   active   active-real ">
+                <span class="plain_name" data-hover="">ALL PRODUCT</span>
+            </a>
+            
+        </li>
+        
+        <li style="" class="depth-01    " data-code="m202305119eae6ad8a3c52">
+            <a href="/NOTICE" data-url="NOTICE" data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
+                <span class="plain_name" data-hover="">NOTICE</span>
+            </a>
+            
+        </li>
+        
+        <li style="" class="depth-01    " data-code="m202305110d022c434e794">
+            <a href="/FAQ" data-url="FAQ" data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
+                <span class="plain_name" data-hover="">FAQ</span>
+            </a>
+            
+        </li>
+        
+        <li style="" class="depth-01    " data-code="m20230511e5973977d6792">
+            <a href="/CONTACT" data-url="CONTACT" data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
+                <span class="plain_name" data-hover="">CONTACT</span>
+            </a>
+            
+        </li>
+        
+        </ul>	</div>
+    </div>
+    
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w2023051177153aad8f32f"><div class="_widget_data " data-widget-name="가로선" data-widget-type="hr" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N"><div class="widget line type01 _hide" id="hr_w2023051177153aad8f32f">
+        <div class="line_box holder" style="width:100%; ">
+            <hr style="border-top-width:1px; border-color:rgba(0, 0, 0, 0.1);">	</div>
+    </div>
+    
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511d69cc49ace341"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="-28" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w20230511d69cc49ace341" style="width:100%; min-height:1px; height:-28px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511208ec095d862f"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+        <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w20230511208ec095d862f">
+            
+                    <div class="text-table "><div><p><em><u>@our-mind</u></em></p></div></div>		
+        </div>
+        
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w202305116882375d3db41"><div class="_widget_data " data-widget-name="갤러리" data-widget-type="gallery2" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">    <div class="widget _gallery_wrap ">
+                    <div id="container_w202305116882375d3db41" class="img_rendering grid_01 type_grid overlay_text hover_show_overlay container_border gallery2  " style="padding-bottom: 0px; height: auto; margin: 0px -1px;">
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                            <div class="_gallery_row gallery_row tabled"><div class="_item item_gallary" style="position: relative; padding: 1px;" data-org="S20230511810db3f885eb7/585d764c1217a.jpg">
+                        <div id="caption_14367209" style="display:none">
+                            <h4></h4><p></p>
+                        </div>
+    
+                        <div class="item_container _item_container"><div class="img_wrap _img_wrap  no_content" id="gal_item_" style="background-image: url(&quot;https://cdn.imweb.me/thumbnail/20230511/2664ab60f908b.jpg&quot;); min-height: 72px;" data-bg="url(https://cdn.imweb.me/thumbnail/20230511/2664ab60f908b.jpg)" data-src="https://cdn.imweb.me/thumbnail/20230511/c571434ba1c70.jpg" data-sub-html="#caption_14367209" data-no="0"></div><div class="text_wrap _text_wrap  " id="gal_item_14367209" data-src="https://cdn.imweb.me/thumbnail/20230511/c571434ba1c70.jpg" data-sub-html="#caption_14367209" style="display: table; height: 72px;"><p class="title"></p></div><div class="slide_overlay"></div></div>                </div><div class="_item item_gallary" style="position: relative; padding: 1px;" data-org="S20230511810db3f885eb7/c5a21d8a726a5.jpg">
+                        <div id="caption_14367210" style="display:none">
+                            <h4></h4><p></p>
+                        </div>
+    
+                        <div class="item_container _item_container"><div class="img_wrap _img_wrap  no_content" id="gal_item_" style="background-image: url(&quot;https://cdn.imweb.me/thumbnail/20230511/0065f9804abd3.jpg&quot;); min-height: 72px;" data-bg="url(https://cdn.imweb.me/thumbnail/20230511/0065f9804abd3.jpg)" data-src="https://cdn.imweb.me/thumbnail/20230511/303528c15ee3d.jpg" data-sub-html="#caption_14367210" data-no="1"></div><div class="text_wrap _text_wrap  " id="gal_item_14367210" data-src="https://cdn.imweb.me/thumbnail/20230511/303528c15ee3d.jpg" data-sub-html="#caption_14367210" style="display: table; height: 72px;"><p class="title"></p></div><div class="slide_overlay"></div></div>                </div><div class="_item item_gallary" style="position: relative; padding: 1px;" data-org="S20230511810db3f885eb7/1ce9dedb7a174.jpg">
+                        <div id="caption_14367211" style="display:none">
+                            <h4></h4><p></p>
+                        </div>
+    
+                        <div class="item_container _item_container"><div class="img_wrap _img_wrap  no_content" id="gal_item_" style="background-image: url(&quot;https://cdn.imweb.me/thumbnail/20230511/74afb764f20cd.jpg&quot;); min-height: 72px;" data-bg="url(https://cdn.imweb.me/thumbnail/20230511/74afb764f20cd.jpg)" data-src="https://cdn.imweb.me/thumbnail/20230511/6480f1f446c0a.jpg" data-sub-html="#caption_14367211" data-no="2"></div><div class="text_wrap _text_wrap  " id="gal_item_14367211" data-src="https://cdn.imweb.me/thumbnail/20230511/6480f1f446c0a.jpg" data-sub-html="#caption_14367211" style="display: table; height: 72px;"><p class="title"></p></div><div class="slide_overlay"></div></div>                </div></div><div class="_gallery_row gallery_row tabled"><div class="_item item_gallary" style="position: relative; padding: 1px;" data-org="S20230511810db3f885eb7/11326d15ad8b5.jpg">
+                        <div id="caption_14367212" style="display:none">
+                            <h4></h4><p></p>
+                        </div>
+    
+                        <div class="item_container _item_container"><div class="img_wrap _img_wrap  no_content" id="gal_item_" style="background-image: url(&quot;https://cdn.imweb.me/thumbnail/20230511/15087a305bbe8.jpg&quot;); min-height: 72px;" data-bg="url(https://cdn.imweb.me/thumbnail/20230511/15087a305bbe8.jpg)" data-src="https://cdn.imweb.me/thumbnail/20230511/67d3c6b12f1b9.jpg" data-sub-html="#caption_14367212" data-no="3"></div><div class="text_wrap _text_wrap  " id="gal_item_14367212" data-src="https://cdn.imweb.me/thumbnail/20230511/67d3c6b12f1b9.jpg" data-sub-html="#caption_14367212" style="display: table; height: 72px;"><p class="title"></p></div><div class="slide_overlay"></div></div>                </div><div class="_item item_gallary" style="position: relative; padding: 1px;" data-org="S20230511810db3f885eb7/0ebae592e4bdd.jpg">
+                        <div id="caption_14367213" style="display:none">
+                            <h4></h4><p></p>
+                        </div>
+    
+                        <div class="item_container _item_container"><div class="img_wrap _img_wrap  no_content" id="gal_item_" style="background-image: url(&quot;https://cdn.imweb.me/thumbnail/20230511/1912c9dfef50d.jpg&quot;); min-height: 72px;" data-bg="url(https://cdn.imweb.me/thumbnail/20230511/1912c9dfef50d.jpg)" data-src="https://cdn.imweb.me/thumbnail/20230511/4a63fe808930c.jpg" data-sub-html="#caption_14367213" data-no="4"></div><div class="text_wrap _text_wrap  " id="gal_item_14367213" data-src="https://cdn.imweb.me/thumbnail/20230511/4a63fe808930c.jpg" data-sub-html="#caption_14367213" style="display: table; height: 72px;"><p class="title"></p></div><div class="slide_overlay"></div></div>                </div><div class="_item item_gallary" style="position: relative; padding: 1px;" data-org="S20230511810db3f885eb7/181e4c9f7f3b8.jpg">
+                        <div id="caption_14367214" style="display:none">
+                            <h4></h4><p></p>
+                        </div>
+    
+                        <div class="item_container _item_container"><div class="img_wrap _img_wrap  no_content" id="gal_item_" style="background-image: url(&quot;https://cdn.imweb.me/thumbnail/20230511/4db6fab577aad.jpg&quot;); min-height: 72px;" data-bg="url(https://cdn.imweb.me/thumbnail/20230511/4db6fab577aad.jpg)" data-src="https://cdn.imweb.me/thumbnail/20230511/08d6146c0f3be.jpg" data-sub-html="#caption_14367214" data-no="5"></div><div class="text_wrap _text_wrap  " id="gal_item_14367214" data-src="https://cdn.imweb.me/thumbnail/20230511/08d6146c0f3be.jpg" data-sub-html="#caption_14367214" style="display: table; height: 72px;"><p class="title"></p></div><div class="slide_overlay"></div></div>                </div></div></div>
+            
+                        <div class="text-center"><a href="javascript:;" class="btn btn-primary _more_btn more_btn margin-top-xl" style="display: none;">더보기</a></div>
+                
+        </div>
+    
+        
+    
+                
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511ac64f21f44e45"><div class="_widget_data " data-widget-name="검색" data-widget-type="search_btn" data-widget-anim="none" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+    
+    <div class="widget inline_widget search_btn clearfix" id="w20230511ac64f21f44e45">
+        <div class="search_type fixed_transform search_btn_type02 " style=" ">
+            <div class="inline-blocked holder">
+                <form class=" icon_on" action="/search" method="get" id="inline_s_form_w20230511ac64f21f44e45">
+                    <input class="search_btn_form _input" name="keyword" style="display: " placeholder="Search" value="" title="site search"><a href="javascript:;" class="fixed_transform inline-blocked  _search_button" onclick="SITE_SEARCH.inlineSearch('w20230511ac64f21f44e45');"><i class="simple icon-magnifier" aria-hidden="true"></i><span class="sr-only">site search</span></a>			</form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    </div></div></div></div></div></div><div></div><div class="side_gutter _side_gutter" side_gutter="Y"></div><div doz_type="inside" class="inside"><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w202305113e438fb97a7e3"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="-67" style="margin-top:0px; margin-bottom:0px;">
+        <div id="padding_w202305113e438fb97a7e3" style="width:100%; min-height:1px; height:-67px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w2023051149157dc7361ad"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="44" style="margin-top:0px; margin-bottom:0px;">
+        <div id="padding_w2023051149157dc7361ad" style="width:100%; min-height:1px; height:44px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511f3786339fde3b"><div class="_widget_data " data-widget-name="쇼핑" data-widget-type="shopping" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">	<div class="shop-content widget">
+            <div class="shop-grid">
+                <div class="thumb-fluid _item_container show_rendering ">
+                                        <div class="shop-tools clearfix" style="display: none">
+                                                    <div class="down-btn" style="display: none">
+                                <select class="form-control" name="deliv_option_type" onchange="document.location.href = encodeURI('/?sort='+$(this).val())" title="정렬 바꾸기">
+                                    <option value="recent">등록순</option>
+                                    <option value="like">인기순</option>
+                                    <option value="min_price">낮은가격순</option>
+                                    <option value="max_price">높은가격순</option>
+                                    <option value="comment">상품평 많은순</option>
+                                    <option value="abc">이름순</option>
+                                    <option value="descabc">이름역순</option>
+                                </select>
+                            </div>
+                                                </div>
+                                            <div class="thumb-row m-list-type2 hover_bright thumb-item-3 _item_wrap " id="container_w20230511f3786339fde3b" style="visibility: visible; margin: 0px -5px;">
+                                <div class="shop-item _shop_item" style="width: 315px; padding: 0px 5px; height: 569px;">
+            <div class="item-wrap" style="position: relative;">
+                <a href="/?idx=4" class="_fade_link shop-item-thumb hover_img_none">
+                    <img data-prodcode="s20230511a97d1a88b54ee" alt="" src="https://cdn.imweb.me/thumbnail/20190509/5cd3c7e5b04ce.png" class="_org_img org_img _lazy_img" data-original="https://cdn.imweb.me/thumbnail/20190509/5cd3c7e5b04ce.png" data-src="https://cdn.imweb.me/thumbnail/20190509/5cd3c7e5b04ce.png" style="display: inline;">
+                                    <div class="item-overlay">
+                        <div class="item-pay">
+                            <div>
+                                <h2>Commodo odio</h2>
+                                                                                            <p class="pay inline-blocked" style=";;">
+                                        47,000원                                </p>
+                                                                                                                        <div class="ns-icon clearfix">
+                                        <!--<span class="new bg-brand">NEW</span>-->
+                                                                        </div>
+                                                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item-detail" style="">
+                            <div class="item-pay">
+                                    <h2 style="display: ">
+                        <a class="_fade_link" href="/?idx=4">Commodo odio</a>
+                    </h2>
+                    <div class="item-pay-detail">
+                        <p class="no-margin">
+                                                    </p><p class="pay inline-blocked" style=";;">
+                                47,000원						</p>
+                                                                                    <p></p>
+                    </div>
+                                                        <div class="ns-icon clearfix">
+                            <!--<span class="new bg-brand">NEW</span>-->
+                                                </div>
+                                    </div>
+                            <div class="item-icon _unit_list unit-list">
+                                                            <span class="im-icon-wrap" onclick="location.href='https://choihyukjae.imweb.me/?idx=4'">
+                            <i class="im-icon im-ico-review"></i><span class="_unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.addProdWish('s20230511a97d1a88b54ee', 'Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D')">
+                            <i id="wish-icon-s20230511a97d1a88b54ee" class="wish-icon-s20230511a97d1a88b54ee im-icon im-ico-like"></i>
+                            <span class="wish-text-s20230511a97d1a88b54ee _unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.openProdDetailFromShoppingList('4', 'https://choihyukjae.imweb.me/?idx=4')">
+                                                                            <i class="im-icon im-ico-cart"></i>
+                        </span>
+                                    
+                </div>
+            </div>
+        </div>
+        <div class="shop-item _shop_item" style="width: 315px; padding: 0px 5px; height: 569px;">
+            <div class="item-wrap" style="position: relative;">
+                <a href="/?idx=3" class="_fade_link shop-item-thumb ">
+                    <img data-prodcode="s20230511d177adbcf68fc" alt="" src="https://cdn.imweb.me/thumbnail/20190509/5cd3c4d85d1de.png" class="_org_img org_img _lazy_img" data-original="https://cdn.imweb.me/thumbnail/20190509/5cd3c4d85d1de.png" data-src="https://cdn.imweb.me/thumbnail/20190509/5cd3c4d85d1de.png" style="display: inline;">
+                                    <div class="item-overlay">
+                        <div class="item-pay">
+                            <div>
+                                <h2>In tellus integer</h2>
+                                                                                            <p class="pay inline-blocked" style=";;">
+                                        38,000원                                </p>
+                                                                                                                        <div class="ns-icon clearfix">
+                                        <!--<span class="new bg-brand">NEW</span>-->
+                                                                        </div>
+                                                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item-detail" style="">
+                            <div class="item-pay">
+                                    <h2 style="display: ">
+                        <a class="_fade_link" href="/?idx=3">In tellus integer</a>
+                    </h2>
+                    <div class="item-pay-detail">
+                        <p class="no-margin">
+                                                    </p><p class="pay inline-blocked" style=";;">
+                                38,000원						</p>
+                                                                                    <p></p>
+                    </div>
+                                                        <div class="ns-icon clearfix">
+                            <!--<span class="new bg-brand">NEW</span>-->
+                                                </div>
+                                    </div>
+                            <div class="item-icon _unit_list unit-list">
+                                                            <span class="im-icon-wrap" onclick="location.href='https://choihyukjae.imweb.me/?idx=3'">
+                            <i class="im-icon im-ico-review"></i><span class="_unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.addProdWish('s20230511d177adbcf68fc', 'Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D')">
+                            <i id="wish-icon-s20230511d177adbcf68fc" class="wish-icon-s20230511d177adbcf68fc im-icon im-ico-like"></i>
+                            <span class="wish-text-s20230511d177adbcf68fc _unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.openProdDetailFromShoppingList('3', 'https://choihyukjae.imweb.me/?idx=3')">
+                                                                            <i class="im-icon im-ico-cart"></i>
+                        </span>
+                                    
+                </div>
+            </div>
+        </div>
+        <div class="shop-item _shop_item" style="width: 315px; padding: 0px 5px; height: 569px;">
+            <div class="item-wrap" style="position: relative;">
+                <a href="/?idx=5" class="_fade_link shop-item-thumb ">
+                    <img data-prodcode="s202305112d1bfb6cf0ab7" alt="" src="https://cdn.imweb.me/thumbnail/20190509/5cd3c528bd2b5.png" class="_org_img org_img _lazy_img" data-original="https://cdn.imweb.me/thumbnail/20190509/5cd3c528bd2b5.png" data-src="https://cdn.imweb.me/thumbnail/20190509/5cd3c528bd2b5.png" style="display: inline;">
+                                    <div class="item-overlay">
+                        <div class="item-pay">
+                            <div>
+                                <h2>vintage book set</h2>
+                                                                                            <p class="pay inline-blocked" style=";;">
+                                        58,000원                                </p>
+                                                                                                                        <div class="ns-icon clearfix">
+                                        <!--<span class="new bg-brand">NEW</span>-->
+                                                                        </div>
+                                                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item-detail" style="">
+                            <div class="item-pay">
+                                    <h2 style="display: ">
+                        <a class="_fade_link" href="/?idx=5">vintage book set</a>
+                    </h2>
+                    <div class="item-pay-detail">
+                        <p class="no-margin">
+                                                    </p><p class="pay inline-blocked" style=";;">
+                                58,000원						</p>
+                                                                                    <p></p>
+                    </div>
+                                                        <div class="ns-icon clearfix">
+                            <!--<span class="new bg-brand">NEW</span>-->
+                                                </div>
+                                    </div>
+                            <div class="item-icon _unit_list unit-list">
+                                                            <span class="im-icon-wrap" onclick="location.href='https://choihyukjae.imweb.me/?idx=5'">
+                            <i class="im-icon im-ico-review"></i><span class="_unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.addProdWish('s202305112d1bfb6cf0ab7', 'Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D')">
+                            <i id="wish-icon-s202305112d1bfb6cf0ab7" class="wish-icon-s202305112d1bfb6cf0ab7 im-icon im-ico-like"></i>
+                            <span class="wish-text-s202305112d1bfb6cf0ab7 _unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.openProdDetailFromShoppingList('5', 'https://choihyukjae.imweb.me/?idx=5')">
+                                                                            <i class="im-icon im-ico-cart"></i>
+                        </span>
+                                    
+                </div>
+            </div>
+        </div>
+        <div class="shop-item _shop_item" style="width: 315px; padding: 0px 5px; height: auto;">
+            <div class="item-wrap" style="position: relative;">
+                <a href="/?idx=2" class="_fade_link shop-item-thumb ">
+                    <img data-prodcode="s202305111bbfa2048f219" alt="" src="https://cdn.imweb.me/thumbnail/20190509/5cd3c5a7130c1.png" class="_org_img org_img _lazy_img" data-original="https://cdn.imweb.me/thumbnail/20190509/5cd3c5a7130c1.png" data-src="https://cdn.imweb.me/thumbnail/20190509/5cd3c5a7130c1.png" style="display: inline;">
+                                    <div class="item-overlay">
+                        <div class="item-pay">
+                            <div>
+                                <h2>dolor magna eget</h2>
+                                                                                            <p class="pay inline-blocked" style=";;">
+                                        48,000원                                </p>
+                                                                                                                        <div class="ns-icon clearfix">
+                                        <!--<span class="new bg-brand">NEW</span>-->
+                                                                        </div>
+                                                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item-detail" style="">
+                            <div class="item-pay">
+                                    <h2 style="display: ">
+                        <a class="_fade_link" href="/?idx=2">dolor magna eget</a>
+                    </h2>
+                    <div class="item-pay-detail">
+                        <p class="no-margin">
+                                                    </p><p class="pay inline-blocked" style=";;">
+                                48,000원						</p>
+                                                                                    <p></p>
+                    </div>
+                                                        <div class="ns-icon clearfix">
+                            <!--<span class="new bg-brand">NEW</span>-->
+                                                </div>
+                                    </div>
+                            <div class="item-icon _unit_list unit-list">
+                                                            <span class="im-icon-wrap" onclick="location.href='https://choihyukjae.imweb.me/?idx=2'">
+                            <i class="im-icon im-ico-review"></i><span class="_unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.addProdWish('s202305111bbfa2048f219', 'Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D')">
+                            <i id="wish-icon-s202305111bbfa2048f219" class="wish-icon-s202305111bbfa2048f219 im-icon im-ico-like"></i>
+                            <span class="wish-text-s202305111bbfa2048f219 _unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.openProdDetailFromShoppingList('2', 'https://choihyukjae.imweb.me/?idx=2')">
+                                                                            <i class="im-icon im-ico-cart"></i>
+                        </span>
+                                    
+                </div>
+            </div>
+        </div>
+        <div class="shop-item _shop_item" style="width: 315px; padding: 0px 5px; height: auto;">
+            <div class="item-wrap" style="position: relative;">
+                <a href="/?idx=1" class="_fade_link shop-item-thumb ">
+                    <img data-prodcode="s20230511bd7d17347945b" alt="" src="https://cdn.imweb.me/thumbnail/20190509/5cd3c8ca7e427.png" class="_org_img org_img _lazy_img" data-original="https://cdn.imweb.me/thumbnail/20190509/5cd3c8ca7e427.png" data-src="https://cdn.imweb.me/thumbnail/20190509/5cd3c8ca7e427.png" style="display: inline;">
+                                    <div class="item-overlay">
+                        <div class="item-pay">
+                            <div>
+                                <h2>dolor sit</h2>
+                                                                                            <p class="pay inline-blocked" style=";;">
+                                        58,000원                                </p>
+                                                                                                                        <div class="ns-icon clearfix">
+                                        <!--<span class="new bg-brand">NEW</span>-->
+                                                                        </div>
+                                                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item-detail" style="">
+                            <div class="item-pay">
+                                    <h2 style="display: ">
+                        <a class="_fade_link" href="/?idx=1">dolor sit</a>
+                    </h2>
+                    <div class="item-pay-detail">
+                        <p class="no-margin">
+                                                    </p><p class="pay inline-blocked" style=";;">
+                                58,000원						</p>
+                                                                                    <p></p>
+                    </div>
+                                                        <div class="ns-icon clearfix">
+                            <!--<span class="new bg-brand">NEW</span>-->
+                                                </div>
+                                    </div>
+                            <div class="item-icon _unit_list unit-list">
+                                                            <span class="im-icon-wrap" onclick="location.href='https://choihyukjae.imweb.me/?idx=1'">
+                            <i class="im-icon im-ico-review"></i><span class="_unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.addProdWish('s20230511bd7d17347945b', 'Lz9yZWRpcmVjdD1ubyZfZ2w9MSpxejE3N3IqX2dhKk1UVXpORE0zTlRVM05TNHhOamd6TnpjMU9EWXgqX2dhX0hQMzdMMDhMUDMqTVRZNE16YzRNakkxTkM0eUxqRXVNVFk0TXpjNE1qSTVPUzR4TlM0d0xqQS4mX2dhPTIuMTA0MTM2MDcxLjYyMzkzNzI5NS4xNjgzNzc1ODYxLTE1MzQzNzU1NzUuMTY4Mzc3NTg2MSZfZ2FjPTEuMjYzMzg5OTUwLjE2ODM3ODIyNTUuQ2p3S0NBandnZTJpQmhCQkVpd0FmWERCUjhuUkJYM0xCOU9tVHpFeGZTeXp5Z25sVlFiZ0pldTJjZXZzdGFUY2s1RlMtZEJvVTJMcnBob0NaWklRQXZEX0J3RQ%3D%3D')">
+                            <i id="wish-icon-s20230511bd7d17347945b" class="wish-icon-s20230511bd7d17347945b im-icon im-ico-like"></i>
+                            <span class="wish-text-s20230511bd7d17347945b _unit" data-value="0">0</span>
+                        </span>
+                                        <span class="im-icon-wrap" onclick="SITE_SHOP_DETAIL.openProdDetailFromShoppingList('1', 'https://choihyukjae.imweb.me/?idx=1')">
+                                                                            <i class="im-icon im-ico-cart"></i>
+                        </span>
+                                    
+                </div>
+            </div>
+        </div>
+                        </div>
+                                </div>
+            </div>
+                </div>
+        
+        
+    </div></div></div></div><div doz_type="row" doz_grid="12" class="doz_row"><div doz_type="grid" doz_grid="12" class="col-dz col-dz-12"><div doz_type="widget" id="w202305111ff1418eb3adf"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w202305111ff1418eb3adf" style="width:100%; min-height:1px; height:30px; "></div>
+    </div>
+    </div></div></div></div></div></main></div><div doz_type="section" class="section_wrap  pc_section       side_left     " id="s20230511d72b2e152ca23" style="; ;" doz_change_mobile="Y" doz_aside="Y" doz_side_width="240" doz_side_margin="30" doz_extend="N" doz_mobile_section="N" doz_mobile_hide="N" doz_header_repeat="N" doz_footer_repeat="Y" doz_category="default"><div class="section_bg _section_bg _interactive_bg   " style="   background-size:cover; background-repeat: no-repeat; position: absolute;left: 0;top: 0;right: 0; bottom: 0;"></div><div class="section_bg_color _section_bg_color" style="  position: absolute;left: 0;top: 0;right: 0; bottom: 0;"></div>
+            
+        
+                
+            
+                        
+                        <main><div doz_type="aside" class="doz_aside _doz_aside" style=""><div doz_type="inside" class="inside"><div doz_type="row" doz_grid="12" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="12" doz_flexible="N" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511f5175aee406ef"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="64" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w20230511f5175aee406ef" style="width:100%; min-height:1px; height:64px; "></div>
+    </div>
+    </div></div></div></div></div></div><div class="side_gutter _side_gutter" side_gutter="Y"></div><div doz_type="inside" class="inside"><div doz_type="row" doz_grid="12" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="12" doz_flexible="N" class="col-dz col-dz-12"><div doz_type="widget" id="w202305113b5683ff970ef"><div class="_widget_data " data-widget-name="가로선" data-widget-type="hr" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N"><div class="widget line type01 _hide" id="hr_w202305113b5683ff970ef">
+        <div class="line_box holder" style="width:100%; ">
+            <hr style="border-top-width:1px; border-color:rgba(0, 0, 0, 0.5);">	</div>
+    </div>
+    
+    </div></div></div></div><div doz_type="row" doz_grid="12" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="12" doz_flexible="N" class="col-dz col-dz-12"><div doz_type="widget" id="w2023051129741b11d277d"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="14" style="margin-top:0px; margin-bottom:0px;">
+        <div id="padding_w2023051129741b11d277d" style="width:100%; min-height:1px; height:14px; "></div>
+    </div>
+    </div></div></div></div><div doz_type="row" doz_grid="12" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="3" doz_flexible="Y" class="col-dz col-dz-3"><div doz_type="row" doz_grid="3" doz_order="1" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="3" doz_flexible="N" class="col-dz col-dz-3"><div doz_type="widget" id="w2023051133bc941a281cd"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+        <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w2023051133bc941a281cd">
+            
+                    <div class="text-table "><div><p><span>TIME INFO</span></p></div></div>		
+        </div>
+        
+    </div></div></div></div><div doz_type="row" doz_grid="3" doz_order="2" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="3" doz_flexible="N" class="col-dz col-dz-3"><div doz_type="widget" id="w2023051100d6703732d4b"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+        <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w2023051100d6703732d4b">
+            
+                    <div class="text-table "><div><p><span style="font-size: 12px;">MON-FRI · AM 09:00 ~ PM 06:00<br>LUNCH · PM 12:00 - PM 01:00<br>SAT.SUN.HOLIDAY OFF</span></p></div></div>		
+        </div>
+        
+    </div></div></div></div><div doz_type="row" doz_grid="3" doz_order="3" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="3" doz_flexible="N" class="col-dz col-dz-3"><div doz_type="widget" id="w202305112c73f7010693c"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="12" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w202305112c73f7010693c" style="width:100%; min-height:1px; height:12px; "></div>
+    </div>
+    </div></div></div></div></div><div doz_type="grid" doz_grid="7" doz_flexible="Y" class="col-dz col-dz-7"><div doz_type="row" doz_grid="7" doz_order="1" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="7" doz_flexible="N" class="col-dz col-dz-7"><div doz_type="widget" id="w20230511ada7971fe5448"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+        <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w20230511ada7971fe5448">
+            
+                    <div class="text-table "><div><p>COMPANY INFO</p></div></div>		
+        </div>
+        
+    </div></div></div></div><div doz_type="row" doz_grid="7" doz_order="2" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="7" doz_flexible="N" class="col-dz col-dz-7"><div doz_type="widget" id="w202305112da20f611a825"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+        <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202305112da20f611a825">
+            
+                    <div class="text-table "><div><p style="font-size:12px;">Company : Our-mind &nbsp;I &nbsp;Company Registration No : 000-00-0000 <br>Mail-Order License&nbsp;: 0000-Seoul-0000 &nbsp;I Address : Seoul, Korea&nbsp;<br>Tel : 00 000 0000 &nbsp;I &nbsp;Fax : 00 000 0000</p><p style="margin-top:5px; font-size:12px;"><a href="?mode=policy">Term of Use</a> &nbsp;<a href="?mode=privacy">Privacy</a></p><p style="font-size:12px; margin-top:5px;"><a href="https://imweb.me/" target="_blank">Hosting by Imweb</a></p></div></div>		
+        </div>
+        
+    </div></div></div></div><div doz_type="row" doz_grid="7" doz_flexible="N" hidden_xs="Y" class="doz_row  hidden-xs"><div doz_type="grid" doz_grid="7" doz_flexible="N" class="col-dz col-dz-7"><div doz_type="widget" id="w20230511ce4ef8b32da10"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="-4" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w20230511ce4ef8b32da10" style="width:100%; min-height:1px; height:-4px; "></div>
+    </div>
+    </div></div></div></div></div><div doz_type="grid" doz_grid="2" doz_flexible="N" hidden_xs="Y" class="col-dz col-dz-2  hidden-xs"><div doz_type="widget" id="w202305110d654993315c9"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="" data-widget-anim-duration="" data-widget-anim-delay="" data-widget-parent-is-mobile="N">
+    <a href="#doz_header" style="display:block;" class=" ">	<div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202305110d654993315c9">
+            
+            <div class="text_bg_color" style="background-color: rgba(255, 255, 255, 0.9)"></div>		<div class="text-table holder"><div><p style="margin: 0px; text-align: right;">TOP</p></div></div>		
+        </div>
+        
+    </a></div></div></div></div><div doz_type="row" doz_grid="12" doz_flexible="N" class="doz_row"><div doz_type="grid" doz_grid="12" doz_flexible="N" class="col-dz col-dz-12"><div doz_type="widget" id="w20230511d7843d65c1912"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="52" style="margin-top:px; margin-bottom:px;">
+        <div id="padding_w20230511d7843d65c1912" style="width:100%; min-height:1px; height:52px; "></div>
+    </div>
+    </div></div></div></div></div></main></div><iframe name="hidden_frame" id="hidden_frame" title="hidden frame" src="about:blank" style="position: absolute; left: -9999px; width: 1px; height: 1px; top:-9999px;"></iframe>
+    <div class="modal" id="cocoaModal" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+    <div class="modal submodal" role="dialog" id="cocoaSubModal" aria-hidden="false" style="z-index: 17001">
+        <div class="modal-dialog">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+    
+    <div id="doz_ad" class="free_ad_block free_banner_wrap" style="z-index: 2147483647;"><div id="doz_free_ad" class="free_ad_block free_banner_wrap" style="z-index: 2147483647;">
+    <div class="holder">
+    <a class="_free_banner free_site_banner inline-blocked " href="https://goo.gl/CNffhw" target="_blank">
+    <img class="hidden-xs hidden-sm" src="https://vendor-cdn.imweb.me/images/site/imweb_new_logo_blue_2x_360.png" width="95">
+    <img class="hidden-md hidden-lg" src="https://vendor-cdn.imweb.me/images/site/imweb_new_logo_white2.png?454848 " width="70">
+    <div class="inline-blocked">
+    <span class="free_ad_text">이 사이트는 아임웹으로 제작되었습니다.</span>
+    </div>
+    </a>
+    <a href="https://imweb.me/theme" target="_blank" class="inline-blocked free_ad_btn btn-brand hidden-xs hidden-sm">무료 시작하기
+    </a>
+    <a href="https://imweb.me/best_production_list" target="_blank" class="inline-blocked free_ad_right hidden-xs hidden-sm"><span>고객사례 확인하기
+    <i class="icon-arrow-right vertical-middle" style="font-size:14px;">
+    </i>
+    </span>
+    </a>
+    </div>
+    </div></div></body>
