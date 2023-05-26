@@ -13,7 +13,7 @@
     @section('test')
         <h2>자식의 섹션입니다.</h2>
         <p>자식자식</p>
-
+        <a href="localhost/최혁재">1111</a>
 
     @endsection
 {{-- 조건문 --}}

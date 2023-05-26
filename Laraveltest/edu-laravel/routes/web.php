@@ -169,7 +169,6 @@ Route::get('/test',[TestController::class, 'index'])->name('tests.index');
 // 커맨드로 컨트롤러 생성 php artisan make:controller TasksController --resource
 use App\Http\Controllers\TasksController;
 Route::resource('/tasks', TasksController::class);
-// 리소스보기 artisan route:list  
 // GET|HEAD        sign ..................................................................................................... sign  
 // GET|HEAD        tasks ..................................................................... tasks.index › TasksController@index  
 // POST            tasks ..................................................................... tasks.store › TasksController@store  
@@ -184,7 +183,5 @@ Route::resource('/tasks', TasksController::class);
 
 use App\Http\Controllers\BladeController;
 Route::get('blade',[BladeController::class, 'index'])->name('blade.index');
-
-
-use App\Http\Controllers\BoardController;
-Route::resource('/board', BoardController::class);
+use App\Http\Controllers\boardinfoController;
+Route::get('/boardinfo',[boardinfoController::class, 'index'])->name('boardinfo.index');
