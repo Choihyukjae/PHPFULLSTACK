@@ -57,7 +57,7 @@ else{
         <label  style= "color : white;" for="id">ID</label>
         <input type="text" name="id"  id="id" >
         <label style= "color : white;" for="pw">PASSWORD</label>
-        <input  type="text" name="pw"  id="pw" >
+        <input  type="password" name="pw"  id="pw" >
         <button type="submit">Login</button>
     </form>
     <br>
@@ -219,7 +219,7 @@ else{
         </div></div></div></div><div doz_type="row" doz_grid="6" class="doz_row"><div doz_type="grid" doz_grid="6" class="col-dz col-dz-6"><div doz_type="widget" id="w2023051171b0b2bc7690b"><div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
             <div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w2023051171b0b2bc7690b">
                 
-                        <div class="text-table "><div><p style="font-size:12px; opacity:0.6;"><span style="color: rgb(238, 238, 238);">&nbsp;CEO: Tomlash ㅣ Business License: 000-00-00000 ㅣ Communication Sales Business Report: 0000-Seoul-0000</span><br><span style="color: rgb(238, 238, 238);">Address: Seoul, Korea CS: +82 (0)0-000-0000(AM10 - PM5, Lunch PM1 - PM2, Weekend and Holiday Off)&nbsp;</span><br><br><a href="?mode=policy"><span style="color: rgb(238, 238, 238);">Terms of Use</span></a><span style="color: rgb(238, 238, 238);">&nbsp;<span style="color: rgb(238, 238, 238);">&nbsp;ㅣ&nbsp;</span></span><a href="?mode=privacy"><span style="color: rgb(238, 238, 238);"><span style="color: rgb(238, 238, 238);">Privacy</span></span></a></p><p style="font-size:12px; opacity:0.6;"><br><a href="" style="color: rgb(238, 238, 238);" target="_blank">최혁재</a></p></div></div>		
+                        <div class="text-table "><div><p style="font-size:12px; opacity:0.6;"><span style="color: rgb(238, 238, 238);">&nbsp;CEO: Choi Hyuk Jae ㅣ Business License: 000-00-00000 ㅣ Communication Sales Business Report: 0000-Seoul-0000</span><br><span style="color: rgb(238, 238, 238);">Address: Seoul, Korea CS: +82 (0)0-000-0000(AM10 - PM5, Lunch PM1 - PM2, Weekend and Holiday Off)&nbsp;</span><br><br><a href="?mode=policy"><span style="color: rgb(238, 238, 238);">Terms of Use</span></a><span style="color: rgb(238, 238, 238);">&nbsp;<span style="color: rgb(238, 238, 238);">&nbsp;ㅣ&nbsp;</span></span><a href="?mode=privacy"><span style="color: rgb(238, 238, 238);"><span style="color: rgb(238, 238, 238);">Privacy</span></span></a></p><p style="font-size:12px; opacity:0.6;"><br><a href="" style="color: rgb(238, 238, 238);" target="_blank">최혁재</a></p></div></div>		
             </div>
             
         </div></div></div></div><div doz_type="row" doz_grid="6" class="doz_row"><div doz_type="grid" doz_grid="6" class="col-dz col-dz-6"><div doz_type="widget" id="w2023051109edcb2b4eef7"><div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding" data-widget-parent-is-mobile="N"><div class="widget padding" data-height="47" style="margin-top:px; margin-bottom:px;">

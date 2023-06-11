@@ -30,7 +30,7 @@
         <br>
 
         <label for="pw">PASSWORD</label>
-        <input required type="text" name="pw"  id="pw" >
+        <input required type="password" name="pw"  id="pw" >
         <span>
         <?php 
                 if(isset($this->arrError["pw"])) {
@@ -40,7 +40,7 @@
         <br>
 
         <label for="pw">PASSWORD check</label>
-        <input required type="text" name="pwChk"  id="pw" >
+        <input required type="password" name="pwChk"  id="pw" >
         <span>
         <?php 
                 if(isset($this->arrError["pwChk"])) {
